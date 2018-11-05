@@ -36,8 +36,10 @@ export default {
 .svg-icon {
   width: 1em;
   height: 1em;
-  vertical-align: -0.15em;
+  /* vertical-align: -0.15em; */
   fill: currentColor;
   overflow: hidden;
+  /* 让图标和文字保持距离 */
+  margin: 0 .8em;
 }
 </style>
