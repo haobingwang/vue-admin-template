@@ -49,10 +49,9 @@ export default {
   line-height: 50px;
   border-radius: 0px !important;
   .hamburger-container {
-    line-height: 50px;
     height: 50px;
     float: left;
-    padding: 0 10px;
+    padding: 5px 0;
   }
   .screenfull {
     position: absolute;
