@@ -14,6 +14,15 @@ module.exports = {
   // add your custom rules here
   //it is base on https://github.com/vuejs/eslint-config-vue
   rules: {
+    "vue/html-self-closing": ["error", {
+      "html": {
+        "void": "never",
+        "normal": "always",
+        "component": "any" // 不强制组件自闭合
+      },
+      "svg": "always",
+      "math": "always"
+    }],
     "vue/max-attributes-per-line": [2, {
       "singleline": 10,
       "multiline": {
