@@ -74,14 +74,16 @@ service.interceptors.response.use(
           Message({
             message: '授权验证失败，请尝试重新登录',
             type: 'error',
-            duration: false
+            duration: false,
+            showClose: true
           })
       }
     } else {
       Message({
         message: error.message,
         type: 'error',
-        duration: false
+        duration: false,
+        showClose: true
       })
     }
     return Promise.reject(error)
