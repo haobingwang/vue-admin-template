@@ -66,6 +66,24 @@ service.interceptors.response.use(
       type: 'error',
       duration: 5 * 1000
     })
+    if (error.response) {
+      switch (error.response.status) {
+        case 401:
+          // 返回 401 清除token信息并跳转到登录页面
+          // window.location.href = '/mas-manager/common/index'
+          Message({
+            message: '授权验证失败，请尝试重新登录',
+            type: 'error',
+            duration: false
+          })
+      }
+    } else {
+      Message({
+        message: error.message,
+        type: 'error',
+        duration: false
+      })
+    }
     return Promise.reject(error)
   }
 )
