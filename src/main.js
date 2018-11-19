@@ -7,6 +7,10 @@ import 'element-ui/lib/theme-chalk/index.css'
 
 import '@/styles/index.scss' // global css
 
+// 引入 moment 处理时间
+import moment from 'moment'
+Object.defineProperty(Vue.prototype, '$moment', { value: moment })
+
 import App from './App'
 import router from './router'
 import store from './store'
