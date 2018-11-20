@@ -63,16 +63,11 @@ service.interceptors.response.use(
   // },
   error => {
     console.log('err' + error) // for debug
-    Message({
-      message: error.message,
-      type: 'error',
-      duration: 5 * 1000
-    })
     if (error.response) {
       switch (error.response.status) {
         case 401:
           // 返回 401 清除token信息并跳转到登录页面
-          MessageBox.confirm('您的登录信息已过期，请重新登录?', '确定登出', {
+          MessageBox.confirm('您的登录信息已过期，请重新登录?', '提示', {
             confirmButtonText: '重新登录',
             cancelButtonText: '取消',
             type: 'warning'
