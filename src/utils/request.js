@@ -68,7 +68,7 @@ service.interceptors.response.use(
         case 401:
           // 返回 401 清除token信息并跳转到登录页面
           MessageBox.confirm('您的登录信息已过期，请重新登录?', '提示', {
-            confirmButtonText: '重新登录',
+            confirmButtonText: '确定',
             cancelButtonText: '取消',
             type: 'warning'
           }).then(() => {
