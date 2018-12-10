@@ -54,10 +54,10 @@
   }
   .hideSidebar {
     .sidebar-container {
-      width: 36px !important;
+      width: $sidebarWidthMin !important;
     }
     .main-container {
-      margin-left: 36px;
+      margin-left: $sidebarWidthMin;
     }
     .submenu-title-noDropdown {
       padding-left: 0 !important;
