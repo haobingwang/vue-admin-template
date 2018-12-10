@@ -42,6 +42,8 @@ import store from './store'
 import './icons' // icon
 import './permission' // permission control
 
+// 仅在开发环境中引入模拟接口
+// 如果接口开发完成后就无需引入模拟数据了
 if (process.env.NODE_ENV === 'development') {
   require('./mock') // simulation data
 }
