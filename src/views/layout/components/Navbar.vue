@@ -43,13 +43,14 @@ export default {
 }
 </script>
 
-<style rel="stylesheet/scss" lang="scss" scoped>
+<style lang="scss" scoped>
+@import '@/styles/variables.scss';
 .navbar {
-  height: 50px;
-  line-height: 50px;
+  height: $navHeight;
+  line-height: $navHeight;
   border-radius: 0px !important;
   .hamburger-container {
-    height: 50px;
+    height: $navHeight;
     float: left;
     padding: 5px 0;
   }
@@ -60,7 +61,7 @@ export default {
     color: red;
   }
   .avatar-container {
-    height: 50px;
+    height: $navHeight;
     display: inline-block;
     position: absolute;
     right: 35px;
